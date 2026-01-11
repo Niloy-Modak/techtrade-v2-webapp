@@ -1,5 +1,5 @@
 // @/database/schemas/GraphicsCardSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const GraphicsCardSpecsSchema = new Schema(
   {

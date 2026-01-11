@@ -1,5 +1,5 @@
 // @/database/schemas/ProcessorSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const ProcessorSpecsSchema = new Schema(
   {

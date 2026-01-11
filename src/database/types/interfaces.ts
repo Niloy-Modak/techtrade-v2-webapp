@@ -31,7 +31,6 @@ export interface IBaseProduct extends Document {
     | IGraphicsCardProduct["specs"]
     | IMotherboardProduct["specs"]
     | IDigitalCameraProduct["specs"];
-    
 
   createdAt: Date;
   updatedAt: Date;
@@ -341,7 +340,12 @@ export interface IGraphicsCardProduct extends IBaseProduct {
     chipset: string;
     cuda_cores: number;
     clocks: { base: string; boost: string; memory: string };
-    memory: { size: string; memory_type: string; bus: string; bandwidth: string };
+    memory: {
+      size: string;
+      memory_type: string;
+      bus: string;
+      bandwidth: string;
+    };
     outputs: { display_port: string; hdmi: string; max_displays: string };
     power: { connectors: string; recommended_psu: string; consumption: string };
     apis: { directx: string; opengl: string };
@@ -461,8 +465,6 @@ export interface IMotherboardProduct extends IBaseProduct {
   };
 }
 
-
-
 // ============= 3. UNION TYPE =============
 export type ProductDocument =
   | IPhoneProduct
@@ -477,4 +479,3 @@ export type ProductDocument =
   | IGraphicsCardProduct
   | IDigitalCameraProduct
   | IMotherboardProduct;
-

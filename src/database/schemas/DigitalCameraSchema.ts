@@ -1,5 +1,5 @@
 // @/database/schemas/DigitalCameraSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const DigitalCameraSpecsSchema = new Schema(
   {

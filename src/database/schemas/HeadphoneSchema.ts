@@ -1,5 +1,5 @@
 // @/database/schemas/HeadphoneSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const HeadphoneSpecsSchema = new Schema(
   {

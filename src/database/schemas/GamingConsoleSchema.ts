@@ -1,5 +1,5 @@
 // @/database/schemas/GamingConsoleSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const GamingConsoleSpecsSchema = new Schema(
   {
@@ -24,7 +24,7 @@ const GamingConsoleSpecsSchema = new Schema(
     backward_compatibility: { type: Boolean, default: false },
     vr_support: { type: Boolean, default: false },
     disc_drive: { type: Boolean, default: false },
-    ports: { type: [String], default: [] ,required: true },
+    ports: { type: [String], default: [], required: true },
     wifi: { type: String, required: true },
     bluetooth: { type: String, required: true },
   },

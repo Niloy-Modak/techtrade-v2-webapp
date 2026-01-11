@@ -1,5 +1,5 @@
 // @/database/schemas/MotherboardSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const MotherboardSpecsSchema = new Schema(
   {

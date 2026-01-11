@@ -1,5 +1,5 @@
 // @/database/schemas/RamSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const RamSpecsSchema = new Schema(
   {

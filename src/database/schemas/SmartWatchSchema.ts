@@ -1,5 +1,5 @@
 // @/database/schemas/SmartWatchSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const SmartWatchSpecsSchema = new Schema(
   {

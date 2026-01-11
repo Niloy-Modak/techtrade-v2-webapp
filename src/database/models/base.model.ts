@@ -1,5 +1,5 @@
 // @/database/models/base.model.ts
-import mongoose, { Schema, Document, Model } from "mongoose";
+import mongoose, { Schema, Model } from "mongoose";
 
 import PhoneSpecsSchema from "@/database/schemas/PhoneSchema";
 import LaptopSpecsSchema from "@/database/schemas/LaptopSchema";
@@ -87,7 +87,7 @@ const BaseProductSchema = new Schema<IBaseProduct>(
         "ssd",
         "graphics_card",
         "digital_camera",
-        "motherboard"
+        "motherboard",
       ],
       index: true,
     },

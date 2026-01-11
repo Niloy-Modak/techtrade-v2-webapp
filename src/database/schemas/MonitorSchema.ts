@@ -1,5 +1,5 @@
 // @/database/schemas/MonitorSchema.ts
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 const MonitorSpecsSchema = new Schema(
   {

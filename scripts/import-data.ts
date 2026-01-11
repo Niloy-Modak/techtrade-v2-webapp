@@ -44,7 +44,7 @@ async function sampleData() {
     SSDProduct.deleteMany({}),
     GraphicsCardProduct.deleteMany({}),
     DigitalCameraProduct.deleteMany({}),
-    MonitorProduct.deleteMany({}),
+    MotherboardProduct.deleteMany({}),
   ]);
 
   // 1 phone
