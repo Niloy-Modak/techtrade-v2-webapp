@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Github, Mail } from "lucide-react";
+import Image from "next/image";
 
 type NavLink = {
   name: string;
@@ -14,7 +15,7 @@ const Footer = () => {
   const navImformationLinks: NavLink[] = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Products", href: "/products" },
+    { name: "Products", href: "/all-products" },
     { name: "Explore", href: "/admin-dashboard" },
   ];
 
@@ -44,14 +45,22 @@ const Footer = () => {
               href="/"
               className="text-white text-2xl font-bold tracking-tight"
             >
-              Tech Trade
+              <div className="flex items-center gap-2 pb-4">
+                <Image
+                  src={"/logo/logo2.png"}
+                  alt="mainlogo"
+                  width={38}
+                  height={38}
+                />
+                <h3>Tech Trade</h3>
+              </div>
             </Link>
             <p className="text-sm leading-relaxed max-w-sm">
               Making the world a better place through constructing elegant
               hierarchies and robust software solutions.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2  gap-12 lg:gap-8">
             {/* Nav Links */}
             {footerLinks.map((section) => (
