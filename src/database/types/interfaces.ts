@@ -1,4 +1,4 @@
-// @/database/types/interfaces.ts
+// src/database/types/interfaces.ts
 import { Document, Types } from "mongoose";
 
 // ============= 1. BASE INTERFACE =============

@@ -1,6 +1,7 @@
-import Banner from "@/components/pages/Home/banner/Banner";
-import CategorySection from "@/components/pages/Home/CategorySection";
-import FeaturesSection from "@/components/pages/Home/FeaturesSection";
+import Banner from "@/components/pages/home/banner/Banner";
+import BrandsSections from "@/components/pages/home/BrandsSections";
+import CategorySection from "@/components/pages/home/CategorySection";
+import FeaturesSection from "@/components/pages/home/FeaturesSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner/>
       <CategorySection/>
       <FeaturesSection/>
+      <BrandsSections/>
     </section>
     </>
   );
