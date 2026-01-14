@@ -1,11 +1,17 @@
-import Image from "next/image";
 import React from "react";
-import { IProduct } from "../pages/home/FeaturesSection";
+import Image from "next/image";
 import Link from "next/link";
+import { IProduct } from "@/components/pages/home/FeaturesSection";
+import FavoriteBtn from "../buttons/FavoriteBtn";
+import AddCartBtn from "../buttons/AddCartBtn";
 
-
-
-const ProductCard = ({ title, key_features, banner, slug }: IProduct) => {
+const ProductCard = ({
+  title,
+  key_features,
+  banner,
+  slug,
+  price,
+}: IProduct) => {
   return (
     <Link href={`product/${slug}`}>
       <div className="h-full">
@@ -28,6 +34,11 @@ const ProductCard = ({ title, key_features, banner, slug }: IProduct) => {
                 className="object-cover rounded-t-xl"
                 sizes="(max-width: 768px) 100vw, 25vw"
               />
+
+              {/* Favorite Button - Top Left */}
+              <div className="absolute top-2 right-2 z-10">
+                <FavoriteBtn />
+              </div>
             </div>
           </div>
 
@@ -38,18 +49,25 @@ const ProductCard = ({ title, key_features, banner, slug }: IProduct) => {
               {title}
             </h3>
 
-            <ul className="space-y-3 flex-grow">
+            <ul className="space-y-3 grow">
               {/* Mapping through 'key_features' from IBaseProduct */}
               {key_features.map((feature, i) => (
                 <li
                   key={i}
                   className="flex items-start text-[13px] text-gray-600 leading-snug"
                 >
-                  <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gray-400 flex-shrink-0" />
+                  <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gray-400 shrink-0" />
                   {feature}
                 </li>
               ))}
             </ul>
+
+            <div className="flex items-center justify-between pt-2">
+              <p className="text-xl font-bold text-gray-900  leading-tight min-h-2">${price}</p>
+              <div>
+                <AddCartBtn />
+              </div>
+            </div>
           </div>
         </div>
       </div>
