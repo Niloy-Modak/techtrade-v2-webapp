@@ -121,15 +121,12 @@ const NavBar = () => {
                     <li key={link.id}>
                       <Link
                         href={link.href}
-                        className={`
-            flex items-center justify-center
-            w-10 h-10 rounded-full transition-all duration-200
-            ${
-              isActive
-                ? "bg-primary text-white"
-                : "text-gray-600 hover:bg-primary hover:text-white"
-            }
-          `}
+                        className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-200
+                          ${
+                            isActive
+                              ? "bg-primary text-white"
+                              : "text-gray-600 hover:bg-primary hover:text-white"
+                          }`}
                       >
                         {link.icon}
                       </Link>
@@ -141,16 +138,7 @@ const NavBar = () => {
 
             {/* Desktop Login */}
             <Link href={"sign-in"}>
-              <button
-                className="
-              px-4 py-2 rounded-full
-              bg-primary/90 text-white
-              backdrop-blur-md
-              hover:bg-primary
-              text-sm font-medium cursor-pointer
-              transition
-            "
-              >
+              <button className=" px-4 py-2 rounded-full bg-primary/90 text-white backdrop-blur-md hover:bg-primary text-sm font-medium cursor-pointer transition ">
                 Sign In
               </button>
             </Link>
