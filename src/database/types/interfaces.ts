@@ -80,7 +80,7 @@ export interface IPhoneProduct extends IBaseProduct {
       width: string;
       thickness: string;
       weight: string;
-    };
+    } 
   };
 }
 

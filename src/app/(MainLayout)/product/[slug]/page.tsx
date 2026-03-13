@@ -1,4 +1,4 @@
-import ProductSpecs from "@/components/pages/productDetails/space-category/ProductSpecs";
+import ProductSpecs from "@/components/pages/productDetails/ProductSpecs";
 import { products } from "@/lib/constants";
 import { ProductDocument } from "@/database/types/interfaces";
 import Image from "next/image";
@@ -43,7 +43,7 @@ const ProductDetailsPage = async ({
               alt="product banner"
               width={500}
               height={500}
-              className="rounded-xl object-contain w-full h-auto"
+              className="rounded-xl object-contain lg:object-cover w-full h-auto lg:min-w-100 md:min-h-100"
               priority
             />
           </div>
@@ -92,7 +92,7 @@ const ProductDetailsPage = async ({
         </div>
       </section>
       {/* Section 2: Spec Details */}
-      <section>
+      <section className="mt-8">
         {/*  Fix the error by casting 'product' as unknown first, then as ProductDocument */}
         <ProductSpecs product={product as unknown as ProductDocument} />
       </section>

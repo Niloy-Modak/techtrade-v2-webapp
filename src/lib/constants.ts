@@ -12,23 +12,58 @@ export const products = [
     ],
     category: "phone",
     brand: "Apple",
-    product_model: "iPhone 14 Pro",
+    product_model: "iPhone 16 Pro",
     price: 1099,
     stock: 50,
     warranty: "1 year",
+
     specs: {
-      display: { size: "6.1 inch", type: "OLED", resolution: "2532x1170" },
-      processor: { chipset: "A16 Bionic", cpu_type: "Hexa-core" },
-      memory: { ram: "6GB", storage: "128GB" },
-      camera: { rear: "48MP+12MP+12MP", front: "12MP" },
-      battery: { capacity: "3200mAh" },
-      connectivity: {
-        network: ["5G", "4G"],
-        wifi: "802.11ax",
-        bluetooth: "5.3",
-        ports: ["Lightning"],
+      display: {
+        size: "6.1 inch",
+        type: "OLED",
+        resolution: "2532 × 1170",
+        refresh_rate: "120Hz",
+        protection: "Ceramic Shield",
       },
-      os: "iOS 16",
+
+      processor: {
+        chipset: "Apple A18 Pro",
+        cpu_type: "Hexa-core",
+        gpu: "Apple GPU",
+      },
+
+      memory: {
+        ram: "8GB",
+        storage: "128GB",
+        expandable: false,
+      },
+
+      camera: {
+        rear: "48MP + 12MP + 12MP",
+        front: "12MP",
+        features: ["Night Mode", "HDR", "4K Video", "Portrait Mode"],
+      },
+
+      battery: {
+        capacity: "3274mAh",
+        charging: "Fast charging 27W",
+      },
+
+      connectivity: {
+        network: ["5G", "4G LTE"],
+        wifi: "Wi-Fi 6E",
+        bluetooth: "5.3",
+        ports: ["USB-C"],
+      },
+
+      os: "iOS 18",
+
+      dimensions: {
+        height: "147.6 mm",
+        width: "71.6 mm",
+        thickness: "7.8 mm",
+        weight: "187 g",
+      },
     },
   },
 
@@ -100,7 +135,11 @@ export const products = [
       "Ray Tracing Support",
     ],
     banner: "/products/console/ps5-cover-image.png",
-    images: ["/products/console/ps5-image1.png", "/products/console/ps5-image2.png", "/products/console/ps5-image3.png" ],
+    images: [
+      "/products/console/ps5-image1.png",
+      "/products/console/ps5-image2.png",
+      "/products/console/ps5-image3.png",
+    ],
     category: "gaming_console",
     brand: "Sony",
     product_model: "CFI-2000",
@@ -334,9 +373,7 @@ export const products = [
       "Integrated Intel UHD Graphics 770",
     ],
     banner: "/products/processor/processor-image.png",
-    images: [
-      "/products/processor/processor-image.png",,
-    ],
+    images: ["/products/processor/processor-image.png", ,],
     category: "processor",
     brand: "Intel",
     product_model: "i9-13900K",
@@ -379,9 +416,7 @@ export const products = [
       "Overclockable",
     ],
     banner: "/products/ram/ram-image.png",
-    images: [
-      "/products/ram/ram-image.png"
-    ],
+    images: ["/products/ram/ram-image.png"],
     category: "ram",
     brand: "Corsair",
     product_model: "Vengeance LPX 16GB",
@@ -461,10 +496,7 @@ export const products = [
       "Ray Tracing & DLSS 3.0",
     ],
     banner: "/products/phone/rtx4090-banner.jpg",
-    images: [
-      "/products/phone/rtx4090-1.jpg",
-      "/products/phone/rtx4090-2.jpg",
-    ],
+    images: ["/products/phone/rtx4090-1.jpg", "/products/phone/rtx4090-2.jpg"],
     category: "graphics_card",
     brand: "NVIDIA",
     product_model: "RTX 4090",
