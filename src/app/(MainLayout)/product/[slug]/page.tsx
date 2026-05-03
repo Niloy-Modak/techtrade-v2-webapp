@@ -93,7 +93,6 @@ const ProductDetailsPage = async ({
       </section>
       {/* Section 2: Spec Details */}
       <section className="mt-8">
-        {/*  Fix the error by casting 'product' as unknown first, then as ProductDocument */}
         <ProductSpecs product={product as unknown as ProductDocument} />
       </section>
     </section>
